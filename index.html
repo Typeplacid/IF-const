@@ -18,23 +18,29 @@
   //   }
   //    console.log(buildUrl('', 'example.com'));
   //      Задание №3
- const whoIsThisHouseToStarks = (family) => {
-   let status;
-   if (family === 'Karstark') {
-    status = 'friend';
-   } else if (family === 'Tally') {
-    status = "friend";
-   } else if (family === 'Lannister') {
-     status = 'enemy';
-   } else if (family === 'Frey') {
-     status = 'enemy';
-   }
-   else {
-     status = 'neutral';
-   };
-   console.log(status);
- };
-    whoIsThisHouseToStarks('Tally');
+//  const whoIsThisHouseToStarks = (family) => {
+//    let status;
+//    if (family === 'Karstark') {
+//     status = 'friend';
+//    } else if (family === 'Tally') {
+//     status = "friend";
+//    } else if (family === 'Lannister') {
+//      status = 'enemy';
+//    } else if (family === 'Frey') {
+//      status = 'enemy';
+//    }
+//    else {
+//      status = 'neutral';
+//    };
+//    console.log(status);
+//  };
+//     whoIsThisHouseToStarks('Tally');
+//Задание №4
+const checkText = (text) => {
+  const firstChar = text.substring(0,1)
+  return (firstChar === firstChar.toUpperCase()) ? text.length : 'Неправильная конструкция предложения';
+};
+  console.log(checkText('fofoyf'));
  </script>
 </body>
 </html>
