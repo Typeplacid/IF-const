@@ -3,12 +3,21 @@
 <head> </head>
 <body>
   <script>
-   const getTypeOfSentence = (sentence) => {
-     let isUpperCase = sentence.toUpperCase();
-     if (isUpperCase === sentence) return 'scream';
-     return 'general';
-};
-  console.log (getTypeOfSentence("ооо"));
+//     задание №1
+//    const getTypeOfSentence = (sentence) => {
+//      let isUpperCase = sentence.toUpperCase();
+//      if (isUpperCase === sentence) return 'scream';
+//      return 'general';
+// };
+//   console.log(getTypeOfSentence("ооо"));
+//      Задание №2
+    const buildUrl = (address, domain) => {
+      if (address.startsWith("/")) {
+          address = address.slice(1);
+      };
+      return `https://${domain}/${address}`;
+    }
+     console.log(buildUrl('', 'example.com'));
   </script>
 </body>
 </html>
