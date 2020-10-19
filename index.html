@@ -3,12 +3,38 @@
 <head> </head>
 <body>
   <script>
-    //задание №1
-  const getSentenceTone = (sentence) => {
-    if (sentence === sentence.toUpperCase()) return 'scream';
-    return 'general';
-  };
-  console.log(getSentenceTone("QQQQQ"));
-  </script>
+  //   задание №1
+  //   const getSentenceTone = (sentence) => {
+  //   if (sentence === sentence.toUpperCase()) return 'scream';
+  //   return 'general';
+  // };
+  // console.log(getSentenceTone("QQQQQ"));
+//      Задание №2
+  //   const buildUrl = (address, domain) => {
+  //     if (address.startsWith("/")) {
+  //         address = address.slice(1);
+  //     };
+  //     return `https://${domain}/${address}`;
+  //   }
+  //    console.log(buildUrl('', 'example.com'));
+  //      Задание №3
+ const whoIsThisHouseToStarks = (family) => {
+   let status;
+   if (family === 'Karstark') {
+    status = 'friend';
+   } else if (family === 'Tally') {
+    status = "friend";
+   } else if (family === 'Lannister') {
+     status = 'enemy';
+   } else if (family === 'Frey') {
+     status = 'enemy';
+   }
+   else {
+     status = 'neutral';
+   };
+   console.log(status);
+ };
+    whoIsThisHouseToStarks('Tally');
+ </script>
 </body>
 </html>
